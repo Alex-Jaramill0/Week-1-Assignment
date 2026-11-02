@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --forest: #293a2b;
+  --olive: #586747;
+  --sage: #a6b39a;
+  --ivory: #f2efe5;
+  --cream: #fcfaf5;
+  --line: #d8d6c9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--forest);
+  font-family: "DM Sans", sans-serif;
+}
+a {
+  color: inherit;
+}
+a:focus-visible {
+  outline: 3px solid #a6b39a;
+  outline-offset: 3px;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+  line-height: 1.04;
+}
+p {
+  line-height: 1.55;
+  font-size: 14px;
+}
+.eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1.5;
+}
+.dark_eyebrow {
+  color: var(--forest);
+}
+/* HEADER IMAGE */
+.site_header {
+  min-height: 115px;
+  padding: 20px 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background:
+    linear-gradient(90deg, rgba(22, 35, 22, 0.6), rgba(22, 35, 22, 0.18)),
+    url("images/header_forest.jpg") center/cover;
+  color: var(--cream);
+}
+.header_brand {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.site_logo {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 64px;
+  line-height: 1;
+  text-decoration: none;
+}
+.brand_divider {
+  width: 1px;
+  height: 52px;
+  background: rgba(255, 255, 255, 0.6);
+}
+.brand_description,
+.header_tagline {
+  font-size: 10px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin: 0;
+}
+.header_tagline {
+  text-align: right;
+}
+/* 3 COLUMN BODY */
+.page_layout {
+  display: grid;
+  grid-template-columns: minmax(145px, 15%) minmax(0, 1fr) minmax(210px, 25%);
+  gap: 16px;
+  padding: 16px;
+  align-items: stretch;
+}
+/* LEFT NAVIGATION */
+.side_nav {
+  position: relative;
+  overflow: hidden;
+  min-width: 0;
+  background: var(--ivory);
+  padding: 24px 16px;
+}
+.nav_header {
+  border-bottom: 1px solid var(--line);
+  padding: 0 10px 22px;
+  margin-bottom: 14px;
+}
+.mountain_mark {
+  display: block;
+  width: 105px;
+  max-width: 100%;
+  color: var(--olive);
+}
+.nav_link {
+  display: block;
+  padding: 15px 12px;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: 12px;
+}
+.nav_link:hover,
+.nav_link.active {
+  background: var(--olive);
+  color: white;
+}
+.nav_decoration {
+  position: absolute;
+  left: -25px;
+  bottom: 15px;
+  font-family: Georgia, serif;
+  font-size: 220px;
+  line-height: 1;
+  transform: rotate(-25deg);
+  color: rgba(88, 103, 71, 0.19);
+  pointer-events: none;
+}
+/* BODY */
+.main_article {
+  min-width: 0;
+}
+/* BODY IMAGE */
+.article_header {
+  min-height: 390px;
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.05)),
+    url("images/hero_garden.jpg") center/cover;
+}
+.article_header h1 {
+  font-size: clamp(3.5rem, 5.8vw, 6.5rem);
+  letter-spacing: -0.035em;
+  margin: 12px 0;
+}
+.hero_description {
+  max-width: 300px;
+  font-size: 15px;
+}
+.outline_button {
+  display: inline-flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 12px;
+  border: 1px solid white;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.outline_button:hover {
+  background: white;
+  color: var(--forest);
+}
+.content_section {
+  padding: 26px 12px;
+  border-bottom: 1px solid var(--line);
+}
+.about_section h2 {
+  font-size: clamp(2.3rem, 3.3vw, 3.8rem);
+  margin: 8px 0 20px;
+}
+.about_columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+.about_columns p {
+  font-size: 13px;
+}
+.about_columns p + p {
+  border-left: 1px solid var(--line);
+  padding-left: 28px;
+}
+.project_grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 16px;
+  margin-top: 18px;
+}
+.project_card {
+  min-width: 0;
+}
+.project_card img {
+  display: block;
+  width: 100%;
+  height: 155px;
+  object-fit: cover;
+  background: #dce1d5;
+}
+.project_title_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 8px;
+}
+.project_title_row h3 {
+  margin: 0;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+}
+.project_title_row a {
+  font-size: 24px;
+  text-decoration: none;
+}
+.project_card p {
+  font-size: 9px;
+  letter-spacing: 1.3px;
+  margin: 4px 0 0;
+}
+.article_footer {
+  margin: 16px 5px 0;
+  padding: 16px 20px;
+  background: var(--olive);
+  color: var(--cream);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.5rem, 2.2vw, 2.2rem);
+  font-style: italic;
+  text-align: center;
+}
+/* ASIDE: THREE SECTIONS */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+.sidebar section {
+  padding: 25px 22px;
+  background: var(--ivory);
+}
+.sidebar h2 {
+  font-size: clamp(2.1rem, 3vw, 3.4rem);
+  margin: 8px 0 16px;
+}
+.sidebar p {
+  font-size: 13px;
+}
+.service_list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+.service_list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1.2px;
+}
+.service_list li:last-child {
+  border-bottom: 0;
+}
+.service_list li span {
+  font-size: 23px;
+  min-width: 25px;
+}
+.sidebar .sustainability_panel {
+  background: var(--olive);
+  color: white;
+}
+.sustainability_panel h2 {
+  font-style: italic;
+}
+.panel_arrow {
+  display: block;
+  text-align: right;
+  font-size: 28px;
+  text-decoration: none;
+}
+.inspiration_panel {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.inspiration_panel img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 225px;
+  object-fit: cover;
+  object-position: center;
+  margin: 16px 0;
+  background: #dce1d5;
+}
+.gallery_link {
+  display: inline-flex;
+  gap: 20px;
+  border-bottom: 1px solid var(--forest);
+  padding-bottom: 5px;
+  text-decoration: none;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+/* FOOTER */
+.site_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  background: var(--forest);
+  color: var(--cream);
+  padding: 25px 4%;
+}
+.footer_brand,
+.footer_contact {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.footer_logo {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 35px;
+}
+.footer_divider {
+  width: 1px;
+  height: 28px;
+  background: var(--cream);
+}
+.footer_studio {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.footer_contact {
+  font-size: 11px;
+}
+.footer_contact a {
+  color: inherit;
+  text-decoration: none;
+  text-underline-offset: 4px;
+}
+.footer_contact a:hover {
+  text-decoration: underline;
+}
+/* TABLET SIZING */
+@media (max-width: 900px) {
+  .page_layout {
+    grid-template-columns: 1fr;
+  }
+  .side_nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    padding: 12px;
+  }
+  .nav_header,
+  .nav_decoration {
+    display: none;
+  }
+  .nav_link {
+    border: 0;
+  }
+  .sidebar {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .inspiration_panel {
+    grid-column: 1/-1;
+  }
+}
+@media (max-width: 600px) {
+  .site_header {
+    padding: 18px;
+  }
+  .site_logo {
+    font-size: 45px;
+  }
+  .brand_description {
+    font-size: 8px;
+  }
+  .header_tagline {
+    display: none;
+  }
+  .article_header {
+    padding: 25px;
+    min-height: 350px;
+  }
+  .about_columns,
+  .project_grid,
+  .sidebar {
+    grid-template-columns: 1fr;
+  }
+  .about_columns p + p {
+    border: 0;
+    padding: 0;
+  }
+  .inspiration_panel {
+    grid-column: auto;
+  }
+  .page_layout {
+    padding: 10px;
+    gap: 10px;
+  }
+}

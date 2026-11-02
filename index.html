@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body id="home">
+    <header class="site_header">
+      <!-- TERRA logo and tagline -->
+      <div class="header_brand">
+        <a class="site_logo" href="#home" aria-label="TERRA home">TERRA</a>
+        <span class="brand_divider" aria-hidden="true"></span>
+        <p class="brand_description">
+          LANDSCAPE
+          <br />
+          ARCHITECTURE
+          <br />
+          STUDIO
+        </p>
+      </div>
+      <p class="header_tagline">SPACES SHAPED BY NATURE.</p>
+    </header>
+
+    <main class="page_layout">
+      <nav class="side_nav" aria-label="Main navigation">
+        <!-- Navigation links -->
+        <a class="nav_link active" href="#home">Home</a>
+        <a class="nav_link" href="#about">About</a>
+        <a class="nav_link" href="#projects">Projects</a>
+        <a class="nav_link" href="#services">Services</a>
+        <a class="nav_link" href="#contact">Contact</a>
+      </nav>
+
+      <article class="main_article">
+        <header class="article_header">
+          <!-- Hero image and headline -->
+          <p class="eyebrow">TERRA STUDIO</p>
+          <h1>
+            Designed by
+            <br />
+            Nature
+          </h1>
+          <p class="hero_description">
+            Thoughtful landscapes where people, architecture, and nature meet.
+          </p>
+          <a class="outline_button" href="#projects">
+            EXPLORE OUR WORK
+            <span aria-hidden="true">→</span>
+          </a>
+        </header>
+        <section class="content_section about_section" id="about">
+          <!-- Studio philosophy -->
+          <p class="eyebrow dark_eyebrow">01 / ABOUT TERRA</p>
+          <h2>Rooted in nature. Designed with purpose.</h2>
+          <div class="about_columns">
+            <p>
+              TERRA is a landscape architecture studio focused on creating
+              meaningful outdoor environments that connect people, place, and
+              the natural world.
+            </p>
+            <p>
+              From private gardens to public landscapes, we design with
+              intention - blending ecological responsibility, timeless beauty,
+              and everyday function.
+            </p>
+          </div>
+        </section>
+        <section class="content_section projects_section" id="projects">
+          <!-- Featured landscape projects -->
+          <p class="eyebrow dark_eyebrow">02 / SELECTED WORK</p>
+          <div class="project_grid">
+            <!--Project 1-->
+            <div class="project_card">
+              <img
+                src="images/stillwater.jpg"
+                alt="Stone pathway through a lush garden"
+                loading="lazy"
+              />
+              <div class="project_title_row">
+                <h3>The Stillwater Garden</h3>
+                <a href="#contact" aria-label="Ask about The Stillwater Garden"
+                  >→</a
+                >
+              </div>
+              <p>RESIDENTIAL / COURTYARD DESIGN</p>
+            </div>
+            <!--Project 2-->
+            <div class="project_card">
+              <img
+                src="images/common_ground.jpg"
+                alt="Ariel view of a green public park"
+                loading="lazy"
+              />
+              <div class="project_title_row">
+                <h3>Common Ground</h3>
+                <a href="#contact" aria-label="Ask about common Ground">→</a>
+              </div>
+              <p>PUBLIC SPACE / URBAN LANDSCAPE</p>
+            </div>
+            <!--Project 3-->
+            <div class="project_card">
+              <img
+                src="images/meadow_house.jpg"
+                alt="Ornamental grasses around a modern home"
+                loading="lazy"
+              />
+              <div class="project_title_row">
+                <h3>Meadow House</h3>
+                <a href="#contact" aria-label="Ask about Meadow House">→</a>
+              </div>
+              <p>RESIDENTIAL / ECOLOGICAL DESIGN</p>
+            </div>
+            <!--Project 4-->
+            <div class="project_card">
+              <img
+                src="images/garden_passage1.jpg"
+                alt="Winding pathway through a shaded green garden"
+                loading="lazy"
+              />
+              <div class="project_title_row">
+                <h3>The Green Passage</h3>
+                <a href="#contact" aria-label="Ask about The Green Passage"
+                  >→</a
+                >
+              </div>
+              <p>GARDEN / EXPERIMENTIAL LANDSCAPE</p>
+            </div>
+          </div>
+        </section>
+
+        <footer class="article_footer">
+          <!-- Closing studio statement -->
+          Landscapes for people, places, and a healthier planet.
+        </footer>
+      </article>
+
+      <!--Right column with three sections-->
+      <aside class="sidebar" aria-label="Studio details and inspiration">
+        <section class="service_panel" id="services">
+          <!-- Studio services -->
+          <p class="eyebrow dark_eyebrow">OUR SERVICES</p>
+          <h2>
+            Landscape
+            <br />
+            Design
+          </h2>
+          <p>
+            "From concept to planting, we design outdoor spaces that are
+            functional, beautiful, and rooted in their environment."
+          </p>
+          <ul class="service_list">
+            <li><span aria-hidden="true">♧</span>Residential Gardens</li>
+            <li><span aria-hidden="true">▱</span>Public Spaces</li>
+            <li><span aria-hidden="true">⌁</span>Site Planning</li>
+          </ul>
+        </section>
+
+        <section class="sustainability_panel">
+          <!-- Sustainability -->
+          <p class="eyebrow">SUSTAINABILITY</p>
+          <h2>
+            Design with
+            <br />
+            Responsibility
+          </h2>
+          <p>
+            We prioritize native planting, water conservation, and biodiversity
+            to create resilient, long-lasting landscapes.
+          </p>
+          <a
+            href="#about"
+            class="panel_arrow"
+            aria-label="Learn about our approach"
+            >→</a
+          >
+        </section>
+
+        <section class="inspiration_panel">
+          <!-- Nature inspiration -->
+          <p class="eyebrow dark_eyebrow">INSPIRATION</p>
+          <img
+            src="images/insperation_sidebar.jpg"
+            alt="Close-up of green fern leaves"
+            loading="lazy"
+          />
+          <p>Ideas, textures, and landscapes inspire our work.</p>
+          <a class="gallery_link" href="#projects">
+            VIEW GALLERY
+            <span aria-hidden="true">→</span>
+          </a>
+        </section>
+      </aside>
+    </main>
+    <!--Full width footer page with fictional contact info for now-->
+    <footer class="site_footer" id="contact">
+      <!-- Contact and copyright -->
+      <div class="footer_brand">
+        <span class="footer_logo">TERRA</span>
+        <span class="footer_divider" aria-hidden="true"></span>
+        <span class="footer_studio">LANDSCAPE ARCHITECTURE STUDIO</span>
+      </div>
+      <div class="footer_contact">
+        <span>⌖ &nbsp; San Jose, CA</span>
+        <a href="#contact" aria-label="Instagram placeholder">Instagram</a>
+        <a href="#contact" aria-label="YouTube placeholder">YouTube</a>
+      </div>
+    </footer>
+  </body>
+</html>
